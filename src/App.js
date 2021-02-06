@@ -30,7 +30,7 @@ function App() {
             <ColorModeSwitcher />
             <Box>
               <Image
-              mt={8}
+                mt={8}
                 borderRadius="full"
                 boxSize="200px"
                 src={Profile}
@@ -38,7 +38,7 @@ function App() {
               />
             </Box>
             <Box>
-              <Stack spacing={4}>
+              <Stack spacing={4} letterSpacing='4px'>
                 <Heading>
                   HI!
             </Heading>
@@ -55,19 +55,19 @@ function App() {
             </Box>
             <Box>
               <a href='mailto:sushantchitrakar@gmail.com'>
-                <Button leftIcon={<HiMail />} variant="solid" size="lg" borderRadius={50} boxShadow="md">
+                <Button iconSpacing='16px' leftIcon={<HiMail style={{ 'height': 24, 'width': 24}}/>} variant="solid" size="lg" borderRadius={50} boxShadow="md" bg='brand.100' color='white' _hover={{ bg: "#fff", color: 'brand.100' }}>
                   <span ml={6}>
                     Say Hello.
                     </span>
-              </Button>
+                </Button>
               </a>
             </Box>
             <Box >
-              <HStack spacing="24px" mt={16} wrap>
+              <HStack spacing="24px" mt={16} mb={16}>
                 {
-                  Socials.map(social => (<Tooltip hasArrow label={social.name} aria-label={social.name} bg="pink.500" color="white">
-                    <a href={social.link}>
-                      <IconButton aria-label={social.name} icon={social.icon} borderRadius={50} />
+                  Socials.map(social => (<Tooltip hasArrow label={social.name} aria-label={social.name} bg="brand.100" color="white">
+                    <a href={social.link} target='_blank' rel="noreferrer">
+                      <IconButton aria-label={social.name} icon={social.icon} borderRadius={50} variant="ghost" />
                     </a>
                   </Tooltip>)
                   )

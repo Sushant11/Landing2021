@@ -7,6 +7,7 @@ import reportWebVitals from './Utils/reportWebVitals';
 import * as serviceWorker from './Utils/serviceWorker';
 
 import theme from './Utils/theme'
+import './Styles/main.scss'
 
 ReactDOM.render(
   <StrictMode>

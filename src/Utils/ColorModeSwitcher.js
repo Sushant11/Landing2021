@@ -8,10 +8,9 @@ export const ColorModeSwitcher = props => {
   const SwitchIcon = useColorModeValue(FaMoon, FaSun);
 
   return (
-    <Tooltip hasArrow label={`Switch to ${text} mode`} aria-label={`Switch to ${text} mode`} bg="brand.100" color="white">
+    <Tooltip label={`Switch to ${text} mode`} aria-label={`Switch to ${text} mode`} bg="brand.100" color="white">
       <IconButton
-        size="md"
-        fontSize="lg"
+        borderRadius={50}
         aria-label={`Switch to ${text} mode`}
         variant="ghost"
         onClick={toggleColorMode}

@@ -30,7 +30,7 @@ function App() {
             <ColorModeSwitcher />
             <Box>
               <Image
-                mt={8}
+                mt={[2, 8, 8]}
                 borderRadius="full"
                 boxSize="200px"
                 src={Profile}
@@ -47,7 +47,7 @@ function App() {
             </Heading>
                 <Text fontSize="xl"><Typed
                   strings={['Software Developer', 'UI/UX Designer']}
-                  typeSpeed={100}
+                  typeSpeed={160}
                   backSpeed={60}
                   loop
                 /></Text>
@@ -55,7 +55,7 @@ function App() {
             </Box>
             <Box>
               <a href='mailto:sushantchitrakar@gmail.com'>
-                <Button iconSpacing='16px' leftIcon={<HiMail style={{ 'height': 24, 'width': 24}}/>} variant="solid" size="lg" borderRadius={50} boxShadow="md" bg='brand.100' color='white' _hover={{ bg: "#fff", color: 'brand.100' }}>
+                <Button iconSpacing='16px' leftIcon={<HiMail style={{ 'height': 24, 'width': 24 }} />} variant="solid" size="lg" borderRadius={50} boxShadow="md" bg='brand.100' color='white' _hover={{ bg: "#fff", color: 'brand.100' }}>
                   <span ml={6}>
                     Say Hello.
                     </span>
@@ -63,9 +63,9 @@ function App() {
               </a>
             </Box>
             <Box >
-              <HStack spacing="24px" mt={16} mb={16}>
+              <HStack spacing="24px" mt={[4, 16, 16]} mb={[8, 16, 16]}>
                 {
-                  Socials.map(social => (<Tooltip hasArrow label={social.name} aria-label={social.name} bg="brand.100" color="white">
+                  Socials.map(social => (<Tooltip label={social.name} aria-label={social.name} bg="brand.100" color="white">
                     <a href={social.link} target='_blank' rel="noreferrer">
                       <IconButton aria-label={social.name} icon={social.icon} borderRadius={50} variant="ghost" />
                     </a>

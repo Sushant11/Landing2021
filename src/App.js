@@ -63,7 +63,7 @@ function App() {
               </a>
             </Box>
             <Box >
-              <HStack spacing="24px" mt={[4, 16, 16]} mb={[8, 16, 16]}>
+              <HStack spacing={[2,6,10]} mt={[4, 16, 16]} mb={[8, 16, 16]}>
                 {
                   Socials.map(social => (<Tooltip label={social.name} aria-label={social.name} bg="brand.100" color="white">
                     <a href={social.link} target='_blank' rel="noreferrer">

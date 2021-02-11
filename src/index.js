@@ -1,7 +1,7 @@
 import { ColorModeScript, ChakraProvider } from '@chakra-ui/react';
 import React, { StrictMode } from 'react';
 import ReactDOM from 'react-dom';
-import ReactGA from 'react-ga';
+// import Fonts from './Styles/Fonts'
 
 import App from './App';
 
@@ -11,14 +11,12 @@ import * as serviceWorker from './Utils/serviceWorker';
 import theme from './Utils/theme'
 import './Styles/main.scss'
 
-const trackingId = "261434632"; // Replace with your Google Analytics tracking ID
-ReactGA.initialize(trackingId);
-
 ReactDOM.render(
   <StrictMode>
     <ColorModeScript />
+    {/* <Fonts /> */}
     <ChakraProvider theme={theme}>
-    <App />
+      <App />
     </ChakraProvider>
   </StrictMode>,
   document.getElementById('root')

@@ -13,6 +13,7 @@ import {
   Tooltip
 } from '@chakra-ui/react';
 import Typed from 'react-typed';
+import ReactGA from 'react-ga';
 
 import { HiMail } from 'react-icons/hi';
 
@@ -20,6 +21,9 @@ import { ColorModeSwitcher } from './Utils/ColorModeSwitcher';
 
 import Profile from './Assets/profile.jpg'
 import Socials from './Assets/socials';
+
+const trackingId = "261434632"; // Replace with your Google Analytics tracking ID
+ReactGA.initialize(trackingId);
 
 function App() {
   return (
@@ -46,7 +50,7 @@ function App() {
                   I AM SUSHANT.
             </Heading>
                 <Text fontSize="xl"><Typed
-                  strings={['Software Developer', 'UI/UX Designer']}
+                  strings={['Software Engineer', 'UI/UX Designer']}
                   typeSpeed={160}
                   backSpeed={60}
                   loop

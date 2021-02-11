@@ -12,6 +12,10 @@ const theme = extendTheme({
       100: "#E47383",
     },
   },
+  // fonts: {
+  //   heading: "Manrope",
+  //   body: "Manrope",
+  // },
   config
 })
 
